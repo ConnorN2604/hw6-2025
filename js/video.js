@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
     const playButton = document.getElementById('play');
     playButton.addEventListener("click", function () {
         video.play();
-        document.getElementById("volume").innerHTML = "100";
+        document.getElementById("volume").innerHTML = `${video.volume * 100}%`;
         console.log("play");
     });
 
